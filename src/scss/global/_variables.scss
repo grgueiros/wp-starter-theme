@@ -1,0 +1,64 @@
+/* Custom Colors*/
+
+
+/* Blue */
+$blue-100: #005faa;
+$blue-75: #0078be;
+$blue-50: #00aaff;
+$blue-25: #5fc3eb;
+
+/* Pink */
+$pink-100: #552382;
+$pink-75: #910f7d;
+$pink-50: #c8007d;
+$pink-25: #e62d87;
+
+/* Green */
+$green-100: #3D8A86;
+$green-75: #3EBBB3;
+$green-50: #47C2BA;
+$green-25: #46D1C8;
+
+/* Orange */
+$orange-100: #d75e14;
+$orange-75: #f07c02;
+$orange-50: #f5a001;
+$orange-25: #ffc300;
+
+/* Grey */
+$grey-100: #232323;
+$grey-97: rgb(32, 32, 32);
+$grey-95: #1e1e1e;
+$grey-90: #323232;
+$grey-80: #646464;
+$grey-60: #707070;
+$grey-40: rgb(190, 190, 190);
+$grey-20: #f7f7f7;
+$white: #ffffff;
+$black: #141414;
+
+/* Placeholder */
+$placeholder: #A2A5A6;
+
+/* Action */
+$success: #c3dfa7;
+$error: #f399a3;
+
+/* Gradients */
+$gradient-blue: linear-gradient(271deg, rgba(0, 170, 255, 0.5), rgba(0, 170, 255, 0.9));
+$gradient-green: linear-gradient(271deg, rgba(105, 175, 35, 0.5), rgba(105, 175, 35, 0.9));
+$gradient-pink: linear-gradient(271deg, rgba(85, 35, 130, 0.5), rgba(85, 35, 130, 0.9));
+$gradient-orange: linear-gradient(271deg, rgba(245, 160, 1, 0.5), rgba(245, 160, 1, 0.9));
+
+/* Fonts */
+$font-bold: 600;
+$font-medium: 500;
+$font-news: 400;
+$font-book: 300;
+$font-book-italic: italic;
+
+// breakpoints
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1280px;
+$screen-xl: 1920px;

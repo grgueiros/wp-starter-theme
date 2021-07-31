@@ -1,0 +1,38 @@
+{
+  "name": "gabriel-website",
+  "version": "1.0.0",
+  "description": "Gabriel - Starter Theme",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "author": "Gabriel Reichardt Gueiros",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/preset-env": "^7.14.8",
+    "autoprefixer": "^10.3.1",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.27.5",
+    "chokidar": "3",
+    "concat": "^1.0.3",
+    "cssnano": "^5.0.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.3.6",
+    "sass": "^1.37.0"
+  },
+  "devDependencies": {}
+}

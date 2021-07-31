@@ -1,0 +1,24 @@
+//Global
+@import 'global/font-face';
+@import 'global/variables';
+@import 'global/global';
+@import 'global/text';
+@import 'global/keyframes';
+
+
+//Components
+@import 'components/menu';
+@import 'components/footer';
+@import 'components/button';
+@import 'components/blog';
+@import 'components/breadcrumb';
+
+
+
+//Páginas
+@import "pages/404";
+@import "pages/home";
+@import "pages/blog";
+@import "pages/category";
+@import "pages/search";
+@import "pages/single";

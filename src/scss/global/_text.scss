@@ -1,0 +1,121 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+span,
+.case-label {
+
+  &.-grey-80 {
+    color: $grey-80;
+  }
+
+  &.-grey-40 {
+    color: $grey-40;
+  }
+
+
+  &.-white {
+    color: $white;
+  }
+}
+
+/* Texto padrão */
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  @media screen and (max-width: $screen-md) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @media screen and (max-width: $screen-sm) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  @media screen and (max-width: $screen-md) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  @media screen and (max-width: $screen-sm) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 52px;
+  @media screen and (max-width: $screen-md) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  @media screen and (max-width: $screen-sm) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  &.-light {
+    line-height: 40px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+
+  @media screen and (max-width: $screen-sm) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+h5 {
+  &.strong {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media screen and (max-width: 700px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 14px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}

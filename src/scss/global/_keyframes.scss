@@ -1,0 +1,266 @@
+@keyframes move {
+  0% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(3px);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flying {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes flyingInfo {
+  0% {
+    transform: translateX(-1400px);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes going {
+  0% {
+    transform: translateY(-50%) translateX(0px);
+  }
+
+  50% {
+    transform: translateY(-50%) translateX(10px);
+  }
+
+  100% {
+    transform: translateY(-50%) translateX(0px);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 30;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dashInfo {
+  0% {
+    stroke-dashoffset: 14;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsingTooltip {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes lightning {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: .3;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+    fill: $orange-50;
+  }
+
+  50% {
+    transform: scale(1.2);
+    fill: $orange-25;
+  }
+
+  100% {
+    transform: scale(1);
+    fill: $orange-50;
+  }
+}
+
+@-webkit-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-moz-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes cd-fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+
+@-moz-keyframes cd-fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes cd-fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes pulseOrange {
+  0% {
+    transform: scale(1);
+    height: 42px;
+    background-color: $orange-50;
+  }
+
+  8% {
+    height: 58px;
+    transform: scale(1.1);
+    background-color: $orange-75;
+  }
+
+  16% {
+    transform: scale(1);
+    height: 42px;
+    background-color: $orange-50;
+  }
+}
+
+@keyframes pulseBlue {
+  0% {
+    transform: scale(1);
+    height: 42px;
+    background-color: $blue-50;
+  }
+
+  8% {
+    height: 58px;
+    transform: scale(1.1);
+    background-color: $blue-75;
+  }
+
+  16% {
+    transform: scale(1);
+    height: 42px;
+    background-color: $blue-50;
+  }
+}
