@@ -22,7 +22,7 @@ function clean() {
 }
 
 //Javascript
-function scripts() {
+function minifyScripts() {
   return gulp
     .src(['./src/js/vendor/*.js', './src/js/*.js'])
     .pipe(plumber())
@@ -45,6 +45,30 @@ function scripts() {
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./dist/js/'))
+}
+
+function copyScripts() {
+  return gulp
+  .src(['./src/js/components/*.js', './src/js/pages/*.js'])
+  .pipe(plumber())
+  .pipe(
+    babel({
+      presets: [
+        [
+          'env',
+          {
+            loose: true,
+            modules: false,
+            exclude: ['transform-es2015-typeof-symbol']
+          }
+        ]
+      ],
+      plugins: ['@babel/plugin-proposal-object-rest-spread']
+    })
+  )
+  .pipe(uglify())
+  .pipe(gulp.dest('./dist/js/components/'))
+
 }
 
 //SCSS
@@ -101,7 +125,7 @@ function copyFonts() {
 
 function browserSync(done) {
   browsersync.init({
-    proxy: 'axs.local',
+    proxy: 'economiza.local',
     port: 3000,
   })
   done();
@@ -111,7 +135,7 @@ function browserSync(done) {
 //Watch
 function watchFiles() {
   gulp.watch('./src/scss/**/*', gulp.series(css, browserSyncReload))
-  gulp.watch('./src/js/**/*', gulp.series(scripts, browserSyncReload))
+  gulp.watch('./src/js/**/*', gulp.series(minifyScripts, copyScripts, browserSyncReload))
   gulp.watch('./src/img/**/*', gulp.series(copyImages, browserSyncReload))
   gulp.watch('./**/*.{html,php}', gulp.series(browserSyncReload))
 }
@@ -121,8 +145,8 @@ function browserSyncReload(done) {
   done()
 }
 
-const assetsDev = gulp.parallel(scripts, css, copyFonts, copyImages)
-const assetsBuild = gulp.parallel(scripts, css, copyFonts, copyImages)
+const assetsDev = gulp.parallel(minifyScripts, copyScripts, css, copyFonts, copyImages)
+const assetsBuild = gulp.parallel(minifyScripts, copyScripts, css, copyFonts, copyImages)
 const watch = gulp.parallel(watchFiles, browserSync)
 
 exports.default = gulp.series(clean, assetsBuild)
